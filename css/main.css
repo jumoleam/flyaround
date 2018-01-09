@@ -1,0 +1,129 @@
+html,body{
+    font-family: "Roboto";
+    position: relative;
+    min-height: 100%;
+    color:#444444;
+}
+body{
+     margin-bottom: 100px;
+}
+
+
+h1, h2, h3{
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0.8
+}
+
+h1 {
+    position: relative;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    pointer-events: none;
+    color:white;
+    text-transform: uppercase;
+    text-align:center;
+    margin:10px auto;
+    width:100%;
+}
+
+h2{
+    color:white;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000;
+    font-weight: 500;
+    font-size:1.5em;
+    width:100%;
+    margin:10px auto;
+    text-align: center;
+}
+
+h3{
+    color:white;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000;
+    font-weight: 100;
+    font-size:1.0em;
+    width:100%;
+    margin:10px auto;
+    text-align: center;
+}
+
+h4{
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+
+.logo{
+    margin-top:0px;
+    width:100%;
+    text-align: center
+}
+.logo img {
+    width:300px;
+    margin:10px auto;
+}
+
+.footer{ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #222222;
+  opacity: 0.8;
+  color:white;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.subscribe
+{
+    color:white;
+    cursor:pointer;
+}
+.registration{
+    width:100%;
+    text-align: center;
+    margin:20px auto;
+}
+
+#registration-form{
+    width:100%;
+    background-color:white;
+    border:3px solid #cccccc;
+    padding:20px;
+    font-size:14px;
+    opacity:0.9;
+    margin-top:30px;
+
+}
+
+.btn-submit{
+    margin:0px auto;
+    cursor:pointer;
+}
+
+footer{
+    text-align: center;
+}
+footer a{
+    font-size: 28px;
+    color: white;
+}
+footer a:hover{
+    color:white;
+}
