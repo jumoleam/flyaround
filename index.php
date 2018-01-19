@@ -54,14 +54,8 @@
 	  		</div>
 	  		<h1>Turul Romaniei 2018</h1>
 	  		<h2>18-26 Mai 2018</h2>
-	  		<h3>Bistrita - Arad - Drobeta - Bucuresti - Costinesti - Radauti</h3>
+	  		<h3>Bistrita - Arad - Drobeta - Costinesti - Braila - Radauti</h3>
 	  		
-	  		<!-- 
-	  		<div class="registration">
-	  			<button type="button" class="subscribe btn btn-outline-success btn-lg">Inscrie-te Acum !</button>
-	  		</div>
-			-->
-
 	  		<form id="registration-form">
 	  			<div class="row">
 	  				<div class="col">
@@ -73,13 +67,13 @@
 	  			<div class="row">
 	  				<div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Nume si prenume pilot comandant</label>
+						    <label>Nume si prenume pilot comandant</label>
 						    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Introduceti numele si prenumele Dvs.">
 						  </div>
 				    </div>
 				   <div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Email</label>
+						    <label>Email</label>
 						    <input type="email" class="form-control" id="email"  placeholder="Introduceti un email valid">
 						  </div>
 				    </div>
@@ -87,13 +81,13 @@
 				 <div class="row">
 	  				<div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Telefon</label>
+						    <label>Telefon</label>
 						    <input type="text" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="+40">
 						  </div>
 				    </div>
 				   <div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Inmatriculare Aeronava</label>
+						    <label>Inmatriculare Aeronava</label>
 						    <input type="text" class="form-control" id="aircraft-registration"  placeholder="Introduceti numarul de inregistrare al aeronavei">
 						 </div>
 				    </div>
@@ -102,7 +96,7 @@
 				 <div class="row">
 	  				<div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Viteza aeronava</label>
+						    <label>Viteza aeronava</label>
 						 	<select  class="form-control" id="aircraft-speed">
 						      <option>120kmh-160kmh</option>
 						      <option>160kmh-180kmh</option>
@@ -113,7 +107,7 @@
 				    </div>
 				   <div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Data expirare navigabilitate aeronava</label>
+						    <label>Data expirare navigabilitate aeronava</label>
 						    <input type="date" class="form-control" id="aircraft-licence">
 						</div>
 				    </div>
@@ -122,14 +116,22 @@
 				 <div class="row">
 	  				<div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Data expirare certificat medical</label>
+						    <label>Data expirare certificat medical</label>
 						 	<input type="date" class="form-control" id="pilot-medical">
 						  </div>
 				    </div>
 				   <div class="col">
 				        <div class="form-group">
-						    <label for="exampleInputEmail1">Data Expirarii Licentei Pilot (ULM/PPL)</label>
+						    <label>Data expirare licenta pilot (ULM/PPL)</label>
 						    <input type="date" class="form-control" id="pilot-licence">
+						  </div>
+				    </div>
+				 </div>
+				 <div class="row">
+	  				<div class="col">
+				       <div class="form-group">
+						    <label>Data expirare asigurare pentru terti</label>
+						 	<input type="date" class="form-control" id="aircraft-assurance">
 						  </div>
 				    </div>
 				 </div>
@@ -137,7 +139,7 @@
 				 <div class="row">
 	  				<div class="col">
 				       <div class="form-group">
-						    <label for="exampleInputEmail1">Numar persoane in aeronava</label>
+						    <label>Numar persoane in aeronava</label>
 						 	<select  class="form-control" id="aircraft-people">
 						      <option>1</option>
 						      <option>2</option>
@@ -162,9 +164,6 @@
 				 <div class="row">
 				 	<button type="submit"  id="btn-register" class="btn-submit btn btn-lg btn-outline-success">Inscriere</button>
 				 </div>
-				 <div class="row">
-				 		<span>In urma inscrierii veti primi un email de confirmare. Va rugam in cazul in care nu primiti sa ne contactati la numarul de telefon +40748028172</span>
-				 </div>
 			</form>
   		</div>
   		
@@ -174,6 +173,21 @@
 	      </div>
 	    </footer>
 	
-	    <script src="/js/main.js"></script>
+
+	    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyBMttkS_7-4aZ0Jdjf0g7raV3J3xgD4V8E",
+		    authDomain: "flyaround-9f4c8.firebaseapp.com",
+		    databaseURL: "https://flyaround-9f4c8.firebaseio.com",
+		    projectId: "flyaround-9f4c8",
+		    storageBucket: "flyaround-9f4c8.appspot.com",
+		    messagingSenderId: "235807112718"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+		<script src="/js/main.js"></script>
   </body>
 </html>

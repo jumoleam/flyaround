@@ -112,6 +112,10 @@ code {
 
 }
 
+#registration-form .is-invalid{
+    border: 1px solid red;
+}
+
 .btn-submit{
     margin:0px auto;
     cursor:pointer;
